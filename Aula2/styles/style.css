@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover:#272727;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    /* height:100vh;   */
+    box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color:var(--cor-secundaria);
+}
+
+.cabeçalho{
+    padding: 2%  0%  0%  10%; 
+
+}
+.cabeçalho__menu{
+    display: flex;
+    gap:80px 
+}
+.cabeçalho__menu__link{
+    font-family: 'Sawarabi Mincho';
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration:none ;
+}
+
+
+
+.título-destaque{   
+    color:var(--cor-terciaria)
+}
+.apresentaçao {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    gap: 82px;
+}
+.apresentaçao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column ;
+    gap:40px;
+
+}
+.apresentaçao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family:'Sawarabi Mincho';
+    letter-spacing: .1rem;
+}
+.apresentaçao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family:'Sawarabi Mincho';
+    letter-spacing: 3px;
+    text-align:justify; 
+    
+
+}
+.apresentaçao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentaçao__links__subtitulo{
+    font-family:'Sawarabi Mincho';
+    font-size: 1.5rem ;
+}
+
+
+.apresentaçao__links__link {
+ 
+    display: flex;
+    justify-content: center ;
+    gap: 16px;
+    font-family:'Sawarabi Mincho';
+    border: 3px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 7px 0;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.apresentaçao__links__link :hover {
+    
+    background:#272727;
+}
+
+
+.apresentacao__imagem {
+    width: 70%;
+}
+
+.rodape {
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Sawarabi Mincho' ;
+    font-size: 1.5rem;
+    
+}
+
+@media (max-width:1200px ) {
+    .cabeçalho {
+        padding: 10%;
+    }
+    .cabeçalho__menu {
+        justify-content: center;
+    }
+    .apresentaçao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentaçao__conteudo{
+        width: auto;
+    }
+    
+}
+    
